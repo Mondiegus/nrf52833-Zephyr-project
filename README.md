@@ -1,23 +1,3 @@
-# zephyr-test-assignment
-
-## Prerequirements:
-* JLink (https://aur.archlinux.org/packages/jlink/)
-* nrf5x-command-line-tools (https://aur.archlinux.org/packages/nrf5x-command-line-tools/)
-
-Then, you should be able to just run `prepenv.sh` on ArchLinux, on Ubuntu it might require some tweaks.
-
-You can also install the environment by yourself following the guide here: 
-https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started.html
-
-## building
-`build.sh` is your friend
-
-## flashing
-`flash.sh` will flash the code and run a `JLinkRTTLogger` afterwards
-
-## monitoring the RTT output
-`tail +1f  ~/.config/RTTLogger_Channel_Terminal.log` - or similar should allow you to see the logs sent over RTT
-## -----------------------------------------------------------------------------------
 ## Code implementation explanation
   Because documentation wasn't too clear for me, I decided to prepare in that way:
 * BUTTON_EVT_SINGLE_PRESS - when button pressed once and nothing is happening for 2 secs since the first detection of a button falling slope
